@@ -1,0 +1,50 @@
+# Reddit Post - r/OpenAI
+
+**Title:**
+[Open Source] I built a transparency layer for AI agents - capture every action and decision
+
+**Content:**
+Hey r/OpenAI!
+
+I just open-sourced **OpenClaw Transparency Layer** - a lightweight tool to make AI agents transparent and auditable.
+
+**What it does:**
+- 📝 Captures every AI agent action (prompts, tool calls, decisions)
+- ✅ Creates checkpoints (save points) at any time
+- 📊 Auto-generates session summaries
+- 💾 Lightweight file-based storage (no database needed)
+
+**Why I built this:**
+We're using AI agents more and more, but understanding what they actually did is a black box. Inspired by Entire Checkpoints ($60M seed), I wanted something simpler and agent-agnostic.
+
+**Quick example:**
+```python
+from transparency import TransparencyLayer
+
+transparency = TransparencyLayer(agent_name="my-agent")
+transparency.track_action(
+    action_type="decision",
+    input_data="Choose authentication method",
+    output_data="Use JWT tokens",
+    metadata={"reasoning": "Stateless and scalable"}
+)
+summary = transparency.end_session()
+```
+
+**Features:**
+- ✅ Zero dependencies (Python stdlib only)
+- ✅ Easy integration (2 lines of code)
+- ✅ MIT licensed
+- ✅ Works with any AI agent (OpenAI, Claude, Gemini, etc.)
+
+**GitHub:** https://github.com/BradZhone/openclaw-transparency
+
+Would love feedback from the community! What features would make this useful for your workflows?
+
+**Roadmap:**
+- Multi-agent interaction tracking
+- Visualization dashboard
+- Git integration
+- Enterprise features
+
+Thanks! 🙏

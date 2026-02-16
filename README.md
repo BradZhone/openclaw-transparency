@@ -31,20 +31,29 @@ OpenClaw Transparency Layer is a lightweight, open-source solution for capturing
 
 ## ✨ Features
 
-### Current Features (v0.1.0 MVP)
+### Current Features
 
+**v0.1.0 - Single Agent (MVP)**
 - ✅ **Session Recording**: Capture every AI agent action (prompts, tool calls, decisions)
 - ✅ **Checkpoint System**: Create save points at any time
 - ✅ **Auto-Summarization**: Automatically generate session summaries
 - ✅ **Lightweight Storage**: File-based, no database required
 - ✅ **Easy Integration**: Add transparency to any OpenClaw agent in 2 lines of code
 
-### Coming Soon (v0.2.0)
+**v0.2.0 - Multi-Agent (NEW! 🚀)**
+- ✅ **Multi-Agent Tracking**: Track interactions between multiple agents
+- ✅ **Interaction Types**: Delegation, request, response, collaboration, handoff
+- ✅ **Coordination Tracking**: Monitor agent coordination and orchestration
+- ✅ **Conflict Detection**: Automatically detect resource contention and conflicts
+- ✅ **Visualization**: Text-based interaction graph visualization
+- ✅ **4+ Concurrent Agents**: Support for complex multi-agent systems
 
-- 🔜 **Multi-Agent Tracking**: Track interactions between multiple agents
-- 🔜 **Visualization Dashboard**: Beautiful UI for exploring sessions
+### Coming Soon (v0.3.0)
+
+- 🔜 **Web Dashboard**: Beautiful UI for exploring sessions
 - 🔜 **Git Integration**: Automatic commits on checkpoints
 - 🔜 **Export Formats**: PDF reports, JSON exports
+- 🔜 **Performance Analytics**: Agent efficiency metrics
 
 ### Future Roadmap
 
