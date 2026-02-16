@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw Transparency Layer - Make AI Agents Transparent & Auditable</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .tagline {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .features {
+            background: white;
+            padding: 60px 20px;
+            margin: 40px 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #667eea;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            padding: 30px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+
+        .demo-section {
+            background: white;
+            padding: 60px 20px;
+            margin: 40px 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        .demo-section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #667eea;
+        }
+
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 30px;
+            border-radius: 15px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 1em;
+            line-height: 1.8;
+            margin: 20px 0;
+        }
+
+        .code-block .comment {
+            color: #6272a4;
+        }
+
+        .code-block .keyword {
+            color: #ff79c6;
+        }
+
+        .code-block .string {
+            color: #f1fa8c;
+        }
+
+        .stats-section {
+            background: white;
+            padding: 40px 20px;
+            margin: 40px 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat-card {
+            padding: 20px;
+        }
+
+        .stat-number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            font-size: 1.1em;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+            opacity: 0.9;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: opacity 0.3s;
+        }
+
+        .footer-links a:hover {
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .tagline {
+                font-size: 1.2em;
+            }
+
+            .btn {
+                display: block;
+                margin: 10px auto;
+                max-width: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 OpenClaw Transparency Layer</h1>
+            <div class="tagline">Make AI Agents Transparent & Auditable with Beautiful HTML Reports</div>
+            <div class="cta-buttons">
+                <a href="https://github.com/BradZhone/openclaw-transparency" class="btn">⭐ Star on GitHub</a>
+                <a href="#demo" class="btn btn-secondary">📊 View Demo</a>
+            </div>
+        </header>
+
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Open Source</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Dependencies</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4+</div>
+                    <div class="stat-label">Concurrent Agents</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number"><10MB</div>
+                    <div class="stat-label">Memory Usage</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>✨ Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3>Session Recording</h3>
+                    <p>Capture every AI agent action: prompts, tool calls, decisions, and multi-agent interactions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>HTML Visualization</h3>
+                    <p>Beautiful interactive timeline with Mermaid.js charts. Mobile-friendly design.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>Checkpoint System</h3>
+                    <p>Create save points at any time. Perfect for debugging and compliance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Multi-Agent Tracking</h3>
+                    <p>Track delegation, collaboration, handoff, and conflicts between agents.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Statistics Dashboard</h3>
+                    <p>At-a-glance metrics: total interactions, agent count, coordination, conflicts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Easy Integration</h3>
+                    <p>Add transparency to any AI agent in 2 lines of code. Works with OpenAI, Claude, Gemini.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-section" id="demo">
+            <h2>🚀 Quick Start</h2>
+            <div class="code-block">
+<span class="comment"># Single Agent Tracking</span>
+<span class="keyword">from</span> openclaw_transparency <span class="keyword">import</span> TransparencyLayer
+
+transparency = TransparencyLayer(agent_name=<span class="string">"my-agent"</span>)
+transparency.track_action(
+    action_type=<span class="string">"decision"</span>,
+    input_data=<span class="string">"Choose authentication method"</span>,
+    output_data=<span class="string">"Use JWT tokens"</span>
+)
+summary = transparency.end_session()
+
+<span class="comment"># Multi-Agent Tracking (NEW!)</span>
+<span class="keyword">from</span> openclaw_transparency <span class="keyword">import</span> MultiAgentTransparency
+
+multi = MultiAgentTransparency()
+multi.register_agent(manager)
+multi.register_agent(coder)
+multi.register_agent(reviewer)
+
+manager.delegate_to(coder, <span class="string">"Implement auth"</span>)
+report = multi.generate_html_report(<span class="string">"report.html"</span>)
+<span class="comment"># Beautiful interactive timeline!</span>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>🎯 Use Cases</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🐛</div>
+                    <h3>Debugging</h3>
+                    <p>Quickly identify where AI agents went wrong with full session replay.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Compliance</h3>
+                    <p>Generate audit trails for enterprise requirements (HIPAA, SOX, GDPR).</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Onboarding</h3>
+                    <p>Help new team members understand AI workflows with session examples.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-links">
+                <a href="https://github.com/BradZhone/openclaw-transparency">GitHub</a>
+                <a href="https://github.com/BradZhone/openclaw-transparency/releases/tag/v0.2.0">v0.2.0 Release</a>
+                <a href="https://github.com/BradZhone/openclaw-transparency/blob/main/README.md">Documentation</a>
+            </div>
+            <p style="margin-top: 20px;">Made with ❤️ by the OpenClaw Community</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">MIT Licensed | Open Source Forever</p>
+        </footer>
+    </div>
+</body>
+</html>
