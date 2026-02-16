@@ -320,6 +320,41 @@ class MultiAgentTransparency:
         )
         return [name for name, _ in sorted_agents[:3]]
     
+    def generate_html_report(self, output_path: Optional[str] = None) -> str:
+        """
+        Generate an interactive HTML report with visualizations.
+        
+        Args:
+            output_path: Where to save the HTML report. If None, uses default path.
+        
+        Returns:
+            HTML content as string
+        """
+        from html_report_generator import HTMLReportGenerator
+        
+        # Generate summary first
+        summary = self.generate_summary()
+        
+        # Determine output path
+        if output_path is None:
+            output_path = self.storage_path / f"{self.session_id}-report.html"
+        else:
+            output_path = Path(output_path)
+        
+        # Generate HTML report
+        generator = HTMLReportGenerator()
+        html_content = generator.generate_report(
+            summary=summary,
+            interactions=self.interactions,
+            agents=self.agents,
+            conflicts=self.conflicts,
+            coordinations=self.coordinations,
+            output_path=str(output_path)
+        )
+        
+        print(f"\n📊 HTML report generated: {output_path}")
+        return html_content
+    
     def end_session(self) -> Dict:
         """End the session and generate final summary"""
         # Detect any remaining conflicts

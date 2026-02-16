@@ -40,20 +40,23 @@ OpenClaw Transparency Layer is a lightweight, open-source solution for capturing
 - ✅ **Lightweight Storage**: File-based, no database required
 - ✅ **Easy Integration**: Add transparency to any OpenClaw agent in 2 lines of code
 
-**v0.2.0 - Multi-Agent (NEW! 🚀)**
+**v0.2.0 - Multi-Agent & HTML Visualization (NEW! 🚀)**
 - ✅ **Multi-Agent Tracking**: Track interactions between multiple agents
 - ✅ **Interaction Types**: Delegation, request, response, collaboration, handoff
 - ✅ **Coordination Tracking**: Monitor agent coordination and orchestration
 - ✅ **Conflict Detection**: Automatically detect resource contention and conflicts
-- ✅ **Visualization**: Text-based interaction graph visualization
+- ✅ **HTML Visualization**: Beautiful, interactive HTML reports with Mermaid.js charts
+- ✅ **Responsive Design**: Mobile-friendly reports with gradient colors
+- ✅ **Timeline Visualization**: Visual timeline of agent interactions
+- ✅ **Statistics Dashboard**: At-a-glance metrics with stat cards
 - ✅ **4+ Concurrent Agents**: Support for complex multi-agent systems
 
 ### Coming Soon (v0.3.0)
 
-- 🔜 **Web Dashboard**: Beautiful UI for exploring sessions
+- 🔜 **Enterprise Compliance**: HIPAA, SOX, GDPR audit reports
+- 🔜 **Real-time Dashboard**: Live monitoring with WebSocket updates
 - 🔜 **Git Integration**: Automatic commits on checkpoints
-- 🔜 **Export Formats**: PDF reports, JSON exports
-- 🔜 **Performance Analytics**: Agent efficiency metrics
+- 🔜 **PDF Export**: Generate PDF reports from sessions
 
 ### Future Roadmap
 
@@ -125,6 +128,52 @@ summary = transparency.end_session()
   "key_decisions": ["Use FastAPI framework", "Add JWT authentication"]
 }
 ```
+
+### Multi-Agent Usage (v0.2.0)
+
+```python
+from multi_agent_transparency import MultiAgentTransparency
+
+# Initialize multi-agent system
+multi_agent = MultiAgentTransparency(project_name="Web Application")
+
+# Register agents
+multi_agent.register_agent(
+    agent_name="CodeGenerator",
+    agent_type="developer",
+    capabilities=["code_generation", "refactoring"]
+)
+
+multi_agent.register_agent(
+    agent_name="Reviewer",
+    agent_type="reviewer",
+    capabilities=["code_review", "quality_check"]
+)
+
+# Track agent interactions
+multi_agent.track_interaction(
+    from_agent="CodeGenerator",
+    to_agent="Reviewer",
+    interaction_type="delegation",
+    content="Please review the authentication module"
+)
+
+# Generate HTML report
+html_content = multi_agent.generate_html_report()
+
+# End session
+summary = multi_agent.end_session()
+```
+
+**HTML Report Features:**
+- 📊 **Interactive Graph**: Mermaid.js visualization of agent workflows
+- ⏱️ **Timeline View**: Visual timeline of all interactions
+- 🤖 **Agent Cards**: Beautiful cards showing agent capabilities
+- 📈 **Statistics**: At-a-glance metrics (agents, interactions, conflicts)
+- 🎨 **Responsive Design**: Works on desktop and mobile
+- 🌈 **Modern UI**: Gradient colors, hover effects, smooth transitions
+
+Open the generated HTML file in any browser to see the interactive report!
 
 ---
 
