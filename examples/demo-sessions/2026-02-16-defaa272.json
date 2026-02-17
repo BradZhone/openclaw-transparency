@@ -1,0 +1,72 @@
+{
+  "session_id": "2026-02-16-defaa272",
+  "agent_name": "Demo-Agent",
+  "start_time": "2026-02-16T09:35:35.999307",
+  "checkpoints": [
+    {
+      "checkpoint_id": "a9845e76-580",
+      "timestamp": "2026-02-16T09:35:36.001712",
+      "description": "\u5b8c\u6210\u6570\u636e\u5206\u6790",
+      "files_modified": [
+        "data.csv",
+        "report.txt"
+      ],
+      "decisions": [
+        {
+          "type": "security",
+          "action": "deleted_sensitive_data"
+        }
+      ],
+      "action_count": 3
+    }
+  ],
+  "actions": [
+    {
+      "timestamp": "2026-02-16T09:35:35.999704",
+      "action_type": "prompt",
+      "input": "\u5e2e\u6211\u5206\u6790\u8fd9\u4e2a\u6587\u4ef6",
+      "output": "\u6587\u4ef6\u5206\u6790\u5b8c\u6210",
+      "metadata": {
+        "file": "data.csv",
+        "lines": 1000
+      }
+    },
+    {
+      "timestamp": "2026-02-16T09:35:36.000133",
+      "action_type": "tool_call",
+      "input": "read_file",
+      "output": "\u6587\u4ef6\u5185\u5bb9\u8bfb\u53d6\u6210\u529f",
+      "metadata": {
+        "tool": "file_reader"
+      }
+    },
+    {
+      "timestamp": "2026-02-16T09:35:36.000511",
+      "action_type": "decision",
+      "input": "\u662f\u5426\u5220\u9664\u654f\u611f\u4fe1\u606f\uff1f",
+      "output": "\u662f\uff0c\u6839\u636e\u5b89\u5168\u7b56\u7565",
+      "metadata": {
+        "policy": "data-security-v1"
+      }
+    },
+    {
+      "timestamp": "2026-02-16T09:35:36.002372",
+      "action_type": "file_write",
+      "input": "\u4fdd\u5b58\u5206\u6790\u62a5\u544a",
+      "output": "\u62a5\u544a\u5df2\u4fdd\u5b58",
+      "metadata": {
+        "file": "report.txt"
+      }
+    },
+    {
+      "timestamp": "2026-02-16T09:35:36.003089",
+      "action_type": "notification",
+      "input": "\u901a\u77e5\u7528\u6237\u4efb\u52a1\u5b8c\u6210",
+      "output": "\u901a\u77e5\u5df2\u53d1\u9001",
+      "metadata": {
+        "channel": "telegram"
+      }
+    }
+  ],
+  "metadata": {}
+}

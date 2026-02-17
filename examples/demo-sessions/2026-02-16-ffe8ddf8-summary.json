@@ -1,0 +1,21 @@
+{
+  "session_id": "2026-02-16-ffe8ddf8",
+  "agent_name": "Demo-Agent",
+  "duration_seconds": 0.003023,
+  "total_actions": 5,
+  "total_checkpoints": 1,
+  "action_breakdown": {
+    "prompt": 1,
+    "tool_call": 1,
+    "decision": 1,
+    "file_write": 1,
+    "notification": 1
+  },
+  "files_modified": [
+    "data.csv",
+    "report.txt"
+  ],
+  "key_decisions": [
+    "{'type': 'security', 'action': 'deleted_sensitive_data'}"
+  ]
+}
