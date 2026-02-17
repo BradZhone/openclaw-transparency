@@ -1,0 +1,34 @@
+{
+  "session_id": "2026-02-17-da860cad",
+  "agent_name": "TestAgent",
+  "start_time": "2026-02-17T17:32:51.881477",
+  "checkpoints": [
+    {
+      "checkpoint_id": "ddafeea2-ddb",
+      "timestamp": "2026-02-17T17:32:51.882093",
+      "description": "Test",
+      "files_modified": [
+        "file.py"
+      ],
+      "decisions": [],
+      "action_count": 2
+    }
+  ],
+  "actions": [
+    {
+      "timestamp": "2026-02-17T17:32:51.881580",
+      "action_type": "action1",
+      "input": "in1",
+      "output": "out1",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:51.881837",
+      "action_type": "action2",
+      "input": "in2",
+      "output": "out2",
+      "metadata": {}
+    }
+  ],
+  "metadata": {}
+}

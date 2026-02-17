@@ -1,0 +1,56 @@
+{
+  "session_id": "2026-02-17-8ec030f4",
+  "agent_name": "NestedTest",
+  "start_time": "2026-02-17T17:32:52.114786",
+  "checkpoints": [],
+  "actions": [
+    {
+      "timestamp": "2026-02-17T17:32:52.114846",
+      "action_type": "nested",
+      "input": {
+        "level1": {
+          "level2": {
+            "level3": {
+              "items": [
+                1,
+                2,
+                3
+              ],
+              "nested_list": [
+                {
+                  "a": 1
+                },
+                {
+                  "b": 2
+                }
+              ]
+            }
+          }
+        }
+      },
+      "output": {
+        "level1": {
+          "level2": {
+            "level3": {
+              "items": [
+                1,
+                2,
+                3
+              ],
+              "nested_list": [
+                {
+                  "a": 1
+                },
+                {
+                  "b": 2
+                }
+              ]
+            }
+          }
+        }
+      },
+      "metadata": {}
+    }
+  ],
+  "metadata": {}
+}

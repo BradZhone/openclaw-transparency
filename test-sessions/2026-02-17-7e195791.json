@@ -1,0 +1,32 @@
+{
+  "session_id": "2026-02-17-7e195791",
+  "agent_name": "TestAgent",
+  "start_time": "2026-02-17T17:32:51.880827",
+  "checkpoints": [
+    {
+      "checkpoint_id": "4c81836c-d2e",
+      "timestamp": "2026-02-17T17:32:51.881100",
+      "description": "Test checkpoint",
+      "files_modified": [
+        "file1.py",
+        "file2.py"
+      ],
+      "decisions": [
+        {
+          "decision": "test decision"
+        }
+      ],
+      "action_count": 1
+    }
+  ],
+  "actions": [
+    {
+      "timestamp": "2026-02-17T17:32:51.880885",
+      "action_type": "test",
+      "input": "in",
+      "output": "out",
+      "metadata": {}
+    }
+  ],
+  "metadata": {}
+}

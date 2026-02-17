@@ -1,0 +1,25 @@
+{
+  "session_id": "2026-02-17-941c5388",
+  "agent_name": "test-agent",
+  "start_time": "2026-02-17T16:58:11.767954",
+  "checkpoints": [
+    {
+      "checkpoint_id": "c9916c51-64a",
+      "timestamp": "2026-02-17T16:58:11.768824",
+      "description": "test checkpoint",
+      "files_modified": [],
+      "decisions": [],
+      "action_count": 1
+    }
+  ],
+  "actions": [
+    {
+      "timestamp": "2026-02-17T16:58:11.768132",
+      "action_type": "test",
+      "input": "input",
+      "output": "output",
+      "metadata": {}
+    }
+  ],
+  "metadata": {}
+}

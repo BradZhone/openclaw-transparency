@@ -1,0 +1,19 @@
+{
+  "session_id": "2026-02-17-7300a34e",
+  "agent_name": "TestAgent",
+  "start_time": "2026-02-17T17:32:51.886864",
+  "checkpoints": [],
+  "actions": [
+    {
+      "timestamp": "2026-02-17T17:32:51.886942",
+      "action_type": "test",
+      "input": "\u6d4b\u8bd5 \ud83d\udd25 \u65e5\u672c\u8a9e \u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+      "output": "\u6d4b\u8bd5 \ud83d\udd25 \u65e5\u672c\u8a9e \u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+      "metadata": {
+        "unicode": "\u6d4b\u8bd5 \ud83d\udd25 \u65e5\u672c\u8a9e \u0627\u0644\u0639\u0631\u0628\u064a\u0629"
+      }
+    }
+  ],
+  "metadata": {},
+  "end_time": "2026-02-17T17:32:51.887439"
+}

@@ -1,0 +1,12 @@
+{
+  "session_id": "2026-02-17-8bb5c1af",
+  "agent_name": "LongSession",
+  "duration_seconds": 0.030596,
+  "total_actions": 50,
+  "total_checkpoints": 5,
+  "action_breakdown": {
+    "action": 50
+  },
+  "files_modified": [],
+  "key_decisions": []
+}

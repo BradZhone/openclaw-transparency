@@ -1,0 +1,401 @@
+{
+  "session_id": "2026-02-17-8bb5c1af",
+  "agent_name": "LongSession",
+  "start_time": "2026-02-17T17:32:52.077526",
+  "checkpoints": [
+    {
+      "checkpoint_id": "fba23d21-c0a",
+      "timestamp": "2026-02-17T17:32:52.081427",
+      "description": "Milestone 1",
+      "files_modified": [],
+      "decisions": [],
+      "action_count": 10
+    },
+    {
+      "checkpoint_id": "f61c24a0-ab3",
+      "timestamp": "2026-02-17T17:32:52.086598",
+      "description": "Milestone 2",
+      "files_modified": [],
+      "decisions": [],
+      "action_count": 20
+    },
+    {
+      "checkpoint_id": "90574c2d-cdb",
+      "timestamp": "2026-02-17T17:32:52.092868",
+      "description": "Milestone 3",
+      "files_modified": [],
+      "decisions": [],
+      "action_count": 30
+    },
+    {
+      "checkpoint_id": "e1037ace-637",
+      "timestamp": "2026-02-17T17:32:52.100226",
+      "description": "Milestone 4",
+      "files_modified": [],
+      "decisions": [],
+      "action_count": 40
+    },
+    {
+      "checkpoint_id": "57a5ddd7-933",
+      "timestamp": "2026-02-17T17:32:52.108972",
+      "description": "Milestone 5",
+      "files_modified": [],
+      "decisions": [],
+      "action_count": 50
+    }
+  ],
+  "actions": [
+    {
+      "timestamp": "2026-02-17T17:32:52.077611",
+      "action_type": "action",
+      "input": "step_0",
+      "output": "result_0",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.077878",
+      "action_type": "action",
+      "input": "step_1",
+      "output": "result_1",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.078104",
+      "action_type": "action",
+      "input": "step_2",
+      "output": "result_2",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.078469",
+      "action_type": "action",
+      "input": "step_3",
+      "output": "result_3",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.078986",
+      "action_type": "action",
+      "input": "step_4",
+      "output": "result_4",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.079419",
+      "action_type": "action",
+      "input": "step_5",
+      "output": "result_5",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.079795",
+      "action_type": "action",
+      "input": "step_6",
+      "output": "result_6",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.080192",
+      "action_type": "action",
+      "input": "step_7",
+      "output": "result_7",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.080561",
+      "action_type": "action",
+      "input": "step_8",
+      "output": "result_8",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.081008",
+      "action_type": "action",
+      "input": "step_9",
+      "output": "result_9",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.081882",
+      "action_type": "action",
+      "input": "step_10",
+      "output": "result_10",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.082438",
+      "action_type": "action",
+      "input": "step_11",
+      "output": "result_11",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.082847",
+      "action_type": "action",
+      "input": "step_12",
+      "output": "result_12",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.083299",
+      "action_type": "action",
+      "input": "step_13",
+      "output": "result_13",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.083710",
+      "action_type": "action",
+      "input": "step_14",
+      "output": "result_14",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.084135",
+      "action_type": "action",
+      "input": "step_15",
+      "output": "result_15",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.084613",
+      "action_type": "action",
+      "input": "step_16",
+      "output": "result_16",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.085086",
+      "action_type": "action",
+      "input": "step_17",
+      "output": "result_17",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.085562",
+      "action_type": "action",
+      "input": "step_18",
+      "output": "result_18",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.086088",
+      "action_type": "action",
+      "input": "step_19",
+      "output": "result_19",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.087076",
+      "action_type": "action",
+      "input": "step_20",
+      "output": "result_20",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.087568",
+      "action_type": "action",
+      "input": "step_21",
+      "output": "result_21",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.088079",
+      "action_type": "action",
+      "input": "step_22",
+      "output": "result_22",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.088612",
+      "action_type": "action",
+      "input": "step_23",
+      "output": "result_23",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.089336",
+      "action_type": "action",
+      "input": "step_24",
+      "output": "result_24",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.089871",
+      "action_type": "action",
+      "input": "step_25",
+      "output": "result_25",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.090433",
+      "action_type": "action",
+      "input": "step_26",
+      "output": "result_26",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.091009",
+      "action_type": "action",
+      "input": "step_27",
+      "output": "result_27",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.091637",
+      "action_type": "action",
+      "input": "step_28",
+      "output": "result_28",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.092242",
+      "action_type": "action",
+      "input": "step_29",
+      "output": "result_29",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.093459",
+      "action_type": "action",
+      "input": "step_30",
+      "output": "result_30",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.094068",
+      "action_type": "action",
+      "input": "step_31",
+      "output": "result_31",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.094686",
+      "action_type": "action",
+      "input": "step_32",
+      "output": "result_32",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.095433",
+      "action_type": "action",
+      "input": "step_33",
+      "output": "result_33",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.096095",
+      "action_type": "action",
+      "input": "step_34",
+      "output": "result_34",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.096765",
+      "action_type": "action",
+      "input": "step_35",
+      "output": "result_35",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.097419",
+      "action_type": "action",
+      "input": "step_36",
+      "output": "result_36",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.098056",
+      "action_type": "action",
+      "input": "step_37",
+      "output": "result_37",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.098770",
+      "action_type": "action",
+      "input": "step_38",
+      "output": "result_38",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.099506",
+      "action_type": "action",
+      "input": "step_39",
+      "output": "result_39",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.100913",
+      "action_type": "action",
+      "input": "step_40",
+      "output": "result_40",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.101631",
+      "action_type": "action",
+      "input": "step_41",
+      "output": "result_41",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.102449",
+      "action_type": "action",
+      "input": "step_42",
+      "output": "result_42",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.103260",
+      "action_type": "action",
+      "input": "step_43",
+      "output": "result_43",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.104042",
+      "action_type": "action",
+      "input": "step_44",
+      "output": "result_44",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.104851",
+      "action_type": "action",
+      "input": "step_45",
+      "output": "result_45",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.105631",
+      "action_type": "action",
+      "input": "step_46",
+      "output": "result_46",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.106417",
+      "action_type": "action",
+      "input": "step_47",
+      "output": "result_47",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.107295",
+      "action_type": "action",
+      "input": "step_48",
+      "output": "result_48",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.108122",
+      "action_type": "action",
+      "input": "step_49",
+      "output": "result_49",
+      "metadata": {}
+    }
+  ],
+  "metadata": {},
+  "end_time": "2026-02-17T17:32:52.109772"
+}

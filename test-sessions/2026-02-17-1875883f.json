@@ -1,0 +1,58 @@
+{
+  "session_id": "2026-02-17-1875883f",
+  "agent_name": "SpecialChars",
+  "start_time": "2026-02-17T17:32:52.110972",
+  "checkpoints": [],
+  "actions": [
+    {
+      "timestamp": "2026-02-17T17:32:52.111069",
+      "action_type": "test_0",
+      "input": "Newline\nand\ttabs",
+      "output": "Newline\nand\ttabs",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.111300",
+      "action_type": "test_1",
+      "input": "Quotes \"single\" and 'double'",
+      "output": "Quotes \"single\" and 'double'",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.111524",
+      "action_type": "test_2",
+      "input": "Backslash\\path",
+      "output": "Backslash\\path",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.112043",
+      "action_type": "test_3",
+      "input": "HTML <script>alert('xss')</script>",
+      "output": "HTML <script>alert('xss')</script>",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.112395",
+      "action_type": "test_4",
+      "input": "JSON {\"key\": \"value\"}",
+      "output": "JSON {\"key\": \"value\"}",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.112686",
+      "action_type": "test_5",
+      "input": "Path ../../../etc/passwd",
+      "output": "Path ../../../etc/passwd",
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:52.113067",
+      "action_type": "test_6",
+      "input": "SQL'; DROP TABLE users;--",
+      "output": "SQL'; DROP TABLE users;--",
+      "metadata": {}
+    }
+  ],
+  "metadata": {}
+}

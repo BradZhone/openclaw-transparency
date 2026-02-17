@@ -1,0 +1,120 @@
+{
+  "test_environment": {
+    "python_version": "3.12.3 (main, Jan 22 2026, 20:57:42) [GCC 13.3.0]",
+    "platform": "linux",
+    "timestamp": "2026-02-17T17:46:36.917968"
+  },
+  "summary": {
+    "total": 17,
+    "passed": 17,
+    "failed": 0,
+    "errors": 0,
+    "duration_seconds": 0.046249
+  },
+  "tier_summary": {
+    "free": {
+      "passed": 6,
+      "failed": 0
+    },
+    "pro": {
+      "passed": 4,
+      "failed": 0
+    },
+    "enterprise": {
+      "passed": 7,
+      "failed": 0
+    }
+  },
+  "results": {
+    "passed": [
+      {
+        "name": "Initialize TransparencyLayer",
+        "tier": "free",
+        "duration": 0.00026488304138183594
+      },
+      {
+        "name": "track_action()",
+        "tier": "free",
+        "duration": 0.00054931640625
+      },
+      {
+        "name": "create_checkpoint()",
+        "tier": "free",
+        "duration": 0.0009038448333740234
+      },
+      {
+        "name": "generate_summary()",
+        "tier": "free",
+        "duration": 0.0014820098876953125
+      },
+      {
+        "name": "end_session()",
+        "tier": "free",
+        "duration": 0.0011262893676757812
+      },
+      {
+        "name": "MultiAgentTracker",
+        "tier": "pro",
+        "duration": 0.0026397705078125
+      },
+      {
+        "name": "Visual Report (ASCII)",
+        "tier": "pro",
+        "duration": 0.005332231521606445
+      },
+      {
+        "name": "Visual Report (HTML)",
+        "tier": "pro",
+        "duration": 0.0009887218475341797
+      },
+      {
+        "name": "Session Search",
+        "tier": "pro",
+        "duration": 0.004476308822631836
+      },
+      {
+        "name": "SOC2 Compliance Report",
+        "tier": "enterprise",
+        "duration": 0.0018811225891113281
+      },
+      {
+        "name": "GDPR Compliance Report",
+        "tier": "enterprise",
+        "duration": 0.0015010833740234375
+      },
+      {
+        "name": "HIPAA Compliance Report",
+        "tier": "enterprise",
+        "duration": 0.0010759830474853516
+      },
+      {
+        "name": "Export to CSV",
+        "tier": "enterprise",
+        "duration": 0.0036742687225341797
+      },
+      {
+        "name": "Export to PDF",
+        "tier": "enterprise",
+        "duration": 0.0012810230255126953
+      },
+      {
+        "name": "Session Merge",
+        "tier": "enterprise",
+        "duration": 0.0046176910400390625
+      },
+      {
+        "name": "Session Compare",
+        "tier": "enterprise",
+        "duration": 0.007917165756225586
+      },
+      {
+        "name": "Cross-Tier Compatibility",
+        "tier": "free",
+        "duration": 0.003625631332397461
+      }
+    ],
+    "failed": [],
+    "errors": []
+  },
+  "status": "PASS"
+}

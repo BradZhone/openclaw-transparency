@@ -1,0 +1,16 @@
+{
+  "session_id": "2026-02-17-c7766024",
+  "agent_name": "test-agent",
+  "start_time": "2026-02-17T16:57:17.959282",
+  "checkpoints": [],
+  "actions": [
+    {
+      "timestamp": "2026-02-17T16:57:17.959586",
+      "action_type": "test",
+      "input": "input",
+      "output": "output",
+      "metadata": {}
+    }
+  ],
+  "metadata": {}
+}

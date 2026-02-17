@@ -1,0 +1,12 @@
+{
+  "session_id": "2026-02-17-bfb279d9",
+  "agent_name": "TestAgent",
+  "duration_seconds": 6.4e-05,
+  "total_actions": 1,
+  "total_checkpoints": 0,
+  "action_breakdown": {
+    "test": 1
+  },
+  "files_modified": [],
+  "key_decisions": []
+}

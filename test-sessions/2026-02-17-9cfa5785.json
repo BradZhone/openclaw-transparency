@@ -1,0 +1,55 @@
+{
+  "session_id": "2026-02-17-9cfa5785",
+  "agent_name": "TestAgent",
+  "start_time": "2026-02-17T17:32:51.884224",
+  "checkpoints": [
+    {
+      "checkpoint_id": "81e2b84a-be2",
+      "timestamp": "2026-02-17T17:32:51.884792",
+      "description": "Checkpoint 1",
+      "files_modified": [
+        "file1.py"
+      ],
+      "decisions": [
+        {
+          "decision": "d1"
+        }
+      ],
+      "action_count": 2
+    }
+  ],
+  "actions": [
+    {
+      "timestamp": "2026-02-17T17:32:51.884294",
+      "action_type": "type1",
+      "input": {
+        "key": "value"
+      },
+      "output": {
+        "result": "ok"
+      },
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:51.884511",
+      "action_type": "type2",
+      "input": [
+        1,
+        2,
+        3
+      ],
+      "output": {
+        "count": 3
+      },
+      "metadata": {}
+    },
+    {
+      "timestamp": "2026-02-17T17:32:51.885139",
+      "action_type": "type3",
+      "input": "string",
+      "output": null,
+      "metadata": {}
+    }
+  ],
+  "metadata": {}
+}
