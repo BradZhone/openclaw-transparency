@@ -2,14 +2,14 @@
   "test_environment": {
     "python_version": "3.12.3 (main, Jan 22 2026, 20:57:42) [GCC 13.3.0]",
     "platform": "linux",
-    "timestamp": "2026-02-17T17:46:36.917968"
+    "timestamp": "2026-02-18T04:11:56.544450"
   },
   "summary": {
     "total": 17,
     "passed": 17,
     "failed": 0,
     "errors": 0,
-    "duration_seconds": 0.046249
+    "duration_seconds": 0.041605
   },
   "tier_summary": {
     "free": {
@@ -30,87 +30,87 @@
       {
         "name": "Initialize TransparencyLayer",
         "tier": "free",
-        "duration": 0.00026488304138183594
+        "duration": 0.0003085136413574219
       },
       {
         "name": "track_action()",
         "tier": "free",
-        "duration": 0.00054931640625
+        "duration": 0.0006241798400878906
       },
       {
         "name": "create_checkpoint()",
         "tier": "free",
-        "duration": 0.0009038448333740234
+        "duration": 0.0007655620574951172
       },
       {
         "name": "generate_summary()",
         "tier": "free",
-        "duration": 0.0014820098876953125
+        "duration": 0.002092599868774414
       },
       {
         "name": "end_session()",
         "tier": "free",
-        "duration": 0.0011262893676757812
+        "duration": 0.0008456707000732422
       },
       {
         "name": "MultiAgentTracker",
         "tier": "pro",
-        "duration": 0.0026397705078125
+        "duration": 0.002833843231201172
       },
       {
         "name": "Visual Report (ASCII)",
         "tier": "pro",
-        "duration": 0.005332231521606445
+        "duration": 0.0055010318756103516
       },
       {
         "name": "Visual Report (HTML)",
         "tier": "pro",
-        "duration": 0.0009887218475341797
+        "duration": 0.0011456012725830078
       },
       {
         "name": "Session Search",
         "tier": "pro",
-        "duration": 0.004476308822631836
+        "duration": 0.004822731018066406
       },
       {
         "name": "SOC2 Compliance Report",
         "tier": "enterprise",
-        "duration": 0.0018811225891113281
+        "duration": 0.0018665790557861328
       },
       {
         "name": "GDPR Compliance Report",
         "tier": "enterprise",
-        "duration": 0.0015010833740234375
+        "duration": 0.001392364501953125
       },
       {
         "name": "HIPAA Compliance Report",
         "tier": "enterprise",
-        "duration": 0.0010759830474853516
+        "duration": 0.0010814666748046875
       },
       {
         "name": "Export to CSV",
         "tier": "enterprise",
-        "duration": 0.0036742687225341797
+        "duration": 0.004381418228149414
       },
       {
         "name": "Export to PDF",
         "tier": "enterprise",
-        "duration": 0.0012810230255126953
+        "duration": 0.0012624263763427734
       },
       {
         "name": "Session Merge",
         "tier": "enterprise",
-        "duration": 0.0046176910400390625
+        "duration": 0.002429485321044922
       },
       {
         "name": "Session Compare",
         "tier": "enterprise",
-        "duration": 0.007917165756225586
+        "duration": 0.0035915374755859375
       },
       {
         "name": "Cross-Tier Compatibility",
         "tier": "free",
-        "duration": 0.003625631332397461
+        "duration": 0.0035724639892578125
       }
     ],
     "failed": [],

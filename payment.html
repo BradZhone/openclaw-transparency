@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw Transparency - Instant Access</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+        .payment-card { background: white; border-radius: 20px; padding: 50px; max-width: 500px; width: 100%; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+        h1 { color: #667eea; font-size: 2em; margin-bottom: 10px; text-align: center; }
+        .subtitle { text-align: center; color: #666; margin-bottom: 40px; }
+        
+        .tier { border: 3px solid #e0e0e0; border-radius: 15px; padding: 25px; margin-bottom: 20px; cursor: pointer; transition: all 0.3s; }
+        .tier:hover, .tier.selected { border-color: #667eea; background: #f8f9ff; }
+        .tier-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .tier-name { font-size: 1.5em; font-weight: bold; color: #333; }
+        .tier-price { font-size: 2em; font-weight: bold; color: #667eea; }
+        .tier-price span { font-size: 0.5em; color: #666; }
+        .tier-features { font-size: 0.9em; color: #666; }
+        .tier-features li { margin: 5px 0; }
+        
+        .payment-methods { margin-top: 30px; padding-top: 30px; border-top: 2px solid #f0f0f0; }
+        .payment-methods h3 { margin-bottom: 20px; color: #333; }
+        
+        .payment-btn { display: block; width: 100%; padding: 15px; margin-bottom: 15px; border: none; border-radius: 10px; font-size: 1.1em; font-weight: bold; cursor: pointer; transition: transform 0.2s; text-decoration: none; text-align: center; }
+        .payment-btn:hover { transform: translateY(-2px); }
+        
+        .paypal-btn { background: #0070ba; color: white; }
+        .crypto-btn { background: #f7931a; color: white; }
+        .telegram-btn { background: #0088cc; color: white; }
+        
+        .promo { background: #fff3cd; border: 1px solid #ffc107; border-radius: 10px; padding: 15px; margin-bottom: 20px; text-align: center; }
+        .promo strong { color: #856404; }
+        
+        .footer { text-align: center; margin-top: 30px; color: #666; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="payment-card">
+        <h1>🚀 Get Instant Access</h1>
+        <p class="subtitle">OpenClaw Transparency Layer</p>
+        
+        <div class="promo">
+            <strong>🎉 Limited Offer:</strong> First 10 customers get 50% OFF Pro tier!
+        </div>
+        
+        <!-- Free Tier -->
+        <div class="tier" onclick="selectTier('free')">
+            <div class="tier-header">
+                <span class="tier-name">Free</span>
+                <span class="tier-price">$0<span>/mo</span></span>
+            </div>
+            <ul class="tier-features">
+                <li>✅ Basic action tracking</li>
+                <li>✅ 1,000 actions/month</li>
+                <li>✅ Community support</li>
+            </ul>
+        </div>
+        
+        <!-- Pro Tier -->
+        <div class="tier selected" onclick="selectTier('pro')">
+            <div class="tier-header">
+                <span class="tier-name">Pro ⭐</span>
+                <span class="tier-price" id="pro-price">$4.50<span>/mo</span></span>
+            </div>
+            <ul class="tier-features">
+                <li>✅ Unlimited actions</li>
+                <li>✅ Multi-agent support</li>
+                <li>✅ Advanced visualization</li>
+                <li>✅ Priority support</li>
+                <li>🔥 <strong>50% OFF</strong> (was $9/mo)</li>
+            </ul>
+        </div>
+        
+        <!-- Enterprise Tier -->
+        <div class="tier" onclick="selectTier('enterprise')">
+            <div class="tier-header">
+                <span class="tier-name">Enterprise</span>
+                <span class="tier-price">$49<span>/mo</span></span>
+            </div>
+            <ul class="tier-features">
+                <li>✅ Everything in Pro</li>
+                <li>✅ Compliance reports</li>
+                <li>✅ SSO & SAML</li>
+                <li>✅ Dedicated support</li>
+                <li>✅ Custom integrations</li>
+            </ul>
+        </div>
+        
+        <div class="payment-methods">
+            <h3>💳 Payment Method</h3>
+            
+            <a href="https://www.paypal.me/BradZhone/4.50" class="payment-btn paypal-btn" id="paypal-btn" target="_blank">
+                💳 Pay with PayPal - $4.50
+            </a>
+            
+            <a href="https://t.me/BradZhone" class="payment-btn crypto-btn">
+                ₿ Pay with Crypto (USDT/USDC)
+            </a>
+            
+            <a href="https://t.me/BradZhone" class="payment-btn telegram-btn">
+                💬 Questions? Chat First
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>✅ 30-day money-back guarantee</p>
+            <p>🔒 Secure payment • Instant activation</p>
+        </div>
+    </div>
+    
+    <script>
+        const pricing = {
+            free: { price: 0, paypal: '' },
+            pro: { price: 4.50, paypal: 'https://www.paypal.me/BradZhone/4.50' },
+            enterprise: { price: 49, paypal: 'https://www.paypal.me/BradZhone/49' }
+        };
+        
+        let selectedTier = 'pro';
+        
+        function selectTier(tier) {
+            selectedTier = tier;
+            document.querySelectorAll('.tier').forEach(el => el.classList.remove('selected'));
+            event.currentTarget.classList.add('selected');
+            
+            const price = pricing[tier].price;
+            const paypalBtn = document.getElementById('paypal-btn');
+            
+            if (tier === 'free') {
+                paypalBtn.style.display = 'none';
+            } else {
+                paypalBtn.style.display = 'block';
+                paypalBtn.href = pricing[tier].paypal;
+                paypalBtn.textContent = `💳 Pay with PayPal - $${price}`;
+            }
+        }
+        
+        // Track selection
+        document.querySelectorAll('.tier').forEach(tier => {
+            tier.addEventListener('click', () => {
+                console.log('Selected tier:', selectedTier);
+            });
+        });
+    </script>
+</body>
+</html>

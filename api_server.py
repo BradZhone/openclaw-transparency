@@ -89,6 +89,16 @@ async def root():
         }
     }
 
+@app.get("/health")
+async def health_check():
+    """Health check endpoint"""
+    return {
+        "status": "healthy",
+        "service": "OpenClaw Transparency API",
+        "version": "1.0.0",
+        "timestamp": datetime.now().isoformat()
+    }
+
 @app.get("/tiers")
 async def get_tiers():
     """Show pricing tiers"""
@@ -131,17 +141,15 @@ async def get_tiers():
 @app.post("/sessions", response_model=SessionResponse)
 async def create_session(request: CreateSessionRequest):
     """Create a new tracking session"""
-    session_id = str(uuid.uuid4())
-    
-    # Create transparency layer
+    # Create transparency layer (it generates its own session_id)
     tracker = TransparencyLayer(
         agent_name=request.agent_name,
-        session_id=session_id,
         tier=request.tier
     )
-    
+
+    session_id = tracker.session_id
     sessions[session_id] = tracker
-    
+
     return SessionResponse(
         session_id=session_id,
         agent_name=request.agent_name,
