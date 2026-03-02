@@ -9,7 +9,7 @@
 
 **Capture, track, and audit every AI agent action**
 
-[Features](#features) • [Quick Start](#quick-start) • [Documentation](#documentation) • [Roadmap](#roadmap)
+[Features](#features) • [Quick Start](#quick-start) • [Real-World Examples](#-real-world-examples) • [Documentation](#documentation) • [Roadmap](#roadmap)
 
 </div>
 
@@ -174,6 +174,17 @@ summary = multi_agent.end_session()
 - 🌈 **Modern UI**: Gradient colors, hover effects, smooth transitions
 
 Open the generated HTML file in any browser to see the interactive report!
+
+## 🌍 Real-World Examples
+
+New integration examples are available in [`examples/`](examples):
+
+- [`examples/langchain_integration.py`](examples/langchain_integration.py) — track a LangChain-style agent workflow
+- [`examples/openai_function_calling.py`](examples/openai_function_calling.py) — add traceability to OpenAI function/tool calls
+- [`examples/multi_agent_orchestration.py`](examples/multi_agent_orchestration.py) — trace delegation and handoffs between multiple agents
+- [`examples/fastapi_integration.md`](examples/fastapi_integration.md) — production pattern for FastAPI (middleware, auth/rate-limit notes, persistence)
+
+These examples are intentionally lightweight and dependency-minimal so contributors can adapt them quickly.
 
 ---
 
